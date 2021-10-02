@@ -1,0 +1,186 @@
+$Violet: hsl(257, 40%, 49%);
+$Soft-Magenta: hsl(300, 69%, 71%);
+$font: 'Open Sans',
+sans-serif;
+$font-two: 'Poppins',
+sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin large {
+    @media (min-width: 1000px) {
+        @content
+    }
+}
+
+
+html,
+body {
+    font-family: $font;
+    background: url("https://raw.githubusercontent.com/seekinfox/huddle-landing-page-with-single-introductory-section-master/f6a2be6c0ce3b68b3fa1a2f8d9059716bd9b76e1/images/bg-mobile.svg"), $Violet;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include large {
+        background: url("https://raw.githubusercontent.com/seekinfox/huddle-landing-page-with-single-introductory-section-master/f6a2be6c0ce3b68b3fa1a2f8d9059716bd9b76e1/images/bg-desktop.svg"), $Violet;
+    }
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    @include large {
+        grid-template-columns: repeat(19, 1fr);
+        grid-template-rows: auto auto auto;
+
+    }
+
+
+    .logo {
+        grid-column: 2/-2;
+        margin-top: 2rem;
+        margin-bottom: 3.5rem;
+
+        img {
+            width: 8rem;
+        }
+
+        @include large {
+            grid-row: 1/2;
+            margin-top: 3.5rem;
+            margin-bottom: 4.7rem;
+
+            img {
+                width: 12.7rem;
+            }
+        }
+    }
+
+    .hero {
+        grid-column: 2/-2;
+        max-width: 25rem;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        @include large {
+            grid-row: 2/-2;
+
+            img {
+                width: 42rem;
+            }
+        }
+
+    }
+
+    .info {
+        grid-column: 2/-2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @include large {
+            grid-column: 12/-2;
+            grid-row: 2/-2;
+            text-align: left;
+            margin-left: 2rem;
+            margin-top: -1rem;
+        }
+
+        p:first-child {
+            font-family: $font-two;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            margin-top: 3.5rem;
+
+            @include large {
+                font-size: 2.5rem;
+            }
+        }
+
+        p:nth-of-type(2) {
+            padding: 1.5rem 0;
+            color: white;
+            font-family: $font;
+
+            @include large {
+                padding-right: 0.8rem;
+            }
+        }
+
+        a {
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+            background: white;
+            padding: .6rem 0;
+            width: 13rem;
+            text-decoration: none;
+            font-size: 13px;
+            color: $Violet;
+            border-radius: 5rem;
+            font-weight: bold;
+
+            @include large {
+                text-align: center;
+                align-self: flex-start;
+                padding: 1rem 0;
+                font-size: 15px;
+                width: 12rem;
+            }
+        }
+
+        a:hover {
+            background: $Soft-Magenta;
+            color: white;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+            font-family: $font;
+
+        }
+    }
+
+
+}
+
+footer {
+    text-align: center;
+    margin: 4rem 0 1.5rem;
+
+    i {
+        width: 1.7rem;
+        height: 1.7rem;
+        color: white;
+        border-radius: 50%;
+        padding: 0.5rem;
+        outline: 1px solid white;
+        font-size: 13px;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    i:hover {
+        color: hsl(300, 79%, 61%);
+        outline: 1px solid $Soft-Magenta;
+    }
+
+    @include large {
+        text-align: right;
+        margin-top: 1rem;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+
+        i {
+            width: 2.3rem;
+            height: 2.3rem;
+            padding: 0.7rem;
+            font-size: 17px;
+        }
+    }
+}
