@@ -23,20 +23,21 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![https://raw.githubusercontent.com/seekinfox/huddle-landing-page-with-single-introductory-section-master/main/Screenshot_2021-10-02%20Frontend%20Mentor%20Huddle%20landing%20page%20with%20single%20introductory%20section(1).png](https://raw.githubusercontent.com/seekinfox/huddle-landing-page-with-single-introductory-section-master/main/Screenshot_2021-10-02%20Frontend%20Mentor%20Huddle%20landing%20page%20with%20single%20introductory%20section(1).png)
+![https://raw.githubusercontent.com/seekinfox/huddle-landing-page-with-single-introductory-section-master/main/Screenshot_2021-10-02%20Frontend%20Mentor%20Huddle%20landing%20page%20with%20single%20introductory%20section.png](https://raw.githubusercontent.com/seekinfox/huddle-landing-page-with-single-introductory-section-master/main/Screenshot_2021-10-02%20Frontend%20Mentor%20Huddle%20landing%20page%20with%20single%20introductory%20section.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/seekinfox/huddle-landing-page-with-single-introductory-section-master](https://github.com/seekinfox/huddle-landing-page-with-single-introductory-section-master)
+- Live Site URL: [https://seekinfox.github.io/huddle-landing-page-with-single-introductory-section-master/](https://seekinfox.github.io/huddle-landing-page-with-single-introductory-section-master/)
 
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS
+- SASS/SCSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
