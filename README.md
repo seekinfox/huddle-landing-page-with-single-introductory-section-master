@@ -52,3 +52,7 @@ Users should be able to:
 ## Acknowledgments
 
 me @seekinfox
+
+## Self-reflection
+
+I'm terrible at css grid. this project took me longer becouse of my messy grid layout.
